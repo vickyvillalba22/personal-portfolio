@@ -412,8 +412,16 @@ button{
         flex-direction: column;
     }
 
+    h1{
+        font-size: 0.5em;
+        text-align: center;
+    }
+
     .w100m{
         width: 100%;
+    }
+    .w80m{
+        width: 80%;
     }
     .w20m{
         width: 20%;
@@ -424,6 +432,17 @@ button{
     }
     .vh40m{
         min-height: 40vh;
+    }
+    .vh90m{
+        min-height: 90vh;
+    }
+
+    .dfM{
+        display: flex;
+    }
+
+    .columnaM{
+        flex-direction: column;
     }
 
     .visibleM{
