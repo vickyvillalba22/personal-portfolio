@@ -451,5 +451,9 @@ button{
     .invisibleM{
         display: none;
     }
+
+    .marginBottomM{
+        margin-bottom: 3em;
+    }
 }
 
