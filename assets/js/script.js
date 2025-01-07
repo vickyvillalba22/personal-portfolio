@@ -13,3 +13,17 @@ const descProyectos = [
     "Diseñé un prototipo funcional de una aplicación móvil para organizar tareas y gestionar el tiempo. Incluí wireframes, un diseño intuitivo y una navegación interactiva que permite simular la experiencia del usuario."
 
 ]
+
+/*movimiento header*/
+
+const header = document.getElementById("header");
+
+window.addEventListener('scroll', ()=>{
+
+    if (window.scrollY>50){
+        header.classList.add("fondoNegro");
+    } else {
+        header.classList.remove("fondoNegro");
+    }
+
+});

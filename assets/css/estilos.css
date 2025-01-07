@@ -6,27 +6,6 @@
     font-family: sans-serif;
 }
 
-header{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-footer{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin-top: 4em;
-}
-
-main{
-    grid-template-areas: 
-                        "section1 section1"
-                        "section2 section2"
-                        "section3 section3"
-                        "section4 section5";
-                        grid-template-columns: 1fr 1fr; 
-                        gap: 4em;
-}
-
 .melocoton{
     background-color: #FAD4C0;
 }
@@ -55,14 +34,31 @@ main{
     color: white;
 }
 
+.fondoNegro{
+    background-color: black;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.fondo-primero{
+    background-image: url("../imgs/heroImg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.5);
+}
+
 #heroSection{
     grid-area: section1;
 }
 
 #sobreMi{
     grid-area: section2;
-    grid-template: 5em repeat(2, 10em) / repeat(2, 1fr);
-    place-items: center;
 }
 
 #sobreMi img{
@@ -79,7 +75,7 @@ main{
 }
 
 #proyectos{
-    grid-area: section3;
+    margin-top: 5em;
 }
 
 #contProyectos{
@@ -89,17 +85,16 @@ main{
     gap: 2em;
 }
 
-#habilidades{
-    grid-area: section4;
+.fondo-final{
+    background-image: url("../imgs/foco-violeta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 110%;
 }
 
 #contHabilidades{
-    grid-template: repeat(4, 3em) / repeat(2, 1fr);
+    grid-template: repeat(4, 3em) / repeat(3, 1fr);
     gap: 1.5em;
-}
-
-#contacto{
-    grid-area: section5;
 }
 
 #contForm{
@@ -152,6 +147,14 @@ ul{
     width: 80%;
 }
 
+.w70{
+    width: 70%;
+}
+
+.w60{
+    width: 60%;
+}
+
 .w50{
     width: 50%;
 }
@@ -162,6 +165,10 @@ ul{
 
 .w30{
     width: 30%;
+}
+
+.w20{
+    width: 20%;
 }
 
 .w10{
@@ -184,8 +191,16 @@ ul{
     min-height: 100vh;
 }
 
+.vh90{
+    min-height: 90vh;
+}
+
 .vh70{
     min-height: 70vh;
+}
+
+.vh60{
+    min-height: 60vh;
 }
 
 .vh50{
@@ -248,18 +263,42 @@ ul{
     font-family: "poppins", sans-serif;
 }
 
+.titPrinc{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.parrafoPrinci{
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
 .parrafos{
+    font-size: 1.2em;
     font-weight: 350;
+    line-height: 2em;
+    text-indent: 2em;
+}
+
+.parrafitos{
+    font-size: 1em;
+    font-weight: 200;
 }
 
 .subtitulos{
     font-family: "poppins", sans-serif;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: 400;
 }
 
 .subtitulos-peque{
     font-family: "poppins", sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.fontBotones{
+    font-size: 0.9em;
     font-weight: 400;
 }
 
@@ -269,6 +308,14 @@ ul{
 
 .bordeRedondo{
     border-radius: 20px;
+}
+
+.redondo{
+    border-radius: 100%;
+}
+
+.proyecto{
+    border: 1px solid rgb(209, 209, 209, 0.5);
 }
 
 button{
@@ -290,6 +337,10 @@ button{
 .fitContent{
     width: fit-content;
     height: fit-content;
+}
+
+.marginTop2{
+    margin-top: 2em;
 }
 
 /*MEDIA QUERY*/

@@ -14,21 +14,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 </head>
-<body class="df columna centerY">
+<body class="df columna centerY fondoNegro">
 
-    <header class="w80 vh10 centerX centerY df spacea melocoton w100m">
+    <div class="fondo-primero">
+
+    <header id="header" class="w100 vh10 centerX centerY df spacea w100m">
 
         <!--cambiar logo-->
-        <div class="w30">
+        <!--<div class="w30">
             <a href=""><img class="w10 w20m" src="assets/imgs/logo.png" alt="logo de la marca"></a>
-        </div>
+        </div>-->
 
-        <nav class="df w40">
+        <nav class="df w50">
             <ul class="df w100 spacea invisibleT">
-                <li><a class="parrafos negro fuente" href="#sobreMi">Sobre Mi</a></li>
-                <li><a class="parrafos negro fuente" href="#proyectos">Proyectos</a></li>
-                <li><a class="parrafos negro fuente" href="#habilidades">Habilidades</a></li>
-                <li><a class="parrafos negro fuente" href="#contacto">Contacto</a></li>
+                <li><a class="parrafos blanco fuente" href="#sobreMi">Sobre Mi</a></li>
+                <li><a class="parrafos blanco fuente" href="#proyectos">Proyectos</a></li>
+                <li><a class="parrafos blanco fuente" href="#habilidades">Habilidades</a></li>
+                <li><a class="parrafos blanco fuente" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -39,90 +41,106 @@
     </header>
 
 
-    <main class="w80 dg">
+    <main class="df columna centerY">
 
-        <section id="heroSection" class="vh50 df centerX centerY spacee">
+        <section id="heroSection" class="vh90 df centerX centerY spacee">
 
-            <div class="w40 h70 df manteca bordeRedondo df centerX w50t w100m vh30m">
-                <div class="df columna spacee w90">
-                    <h1 class="fuente">Hi! I'm Victoria Villalba</h1>
-                    <p class="parrafos fuente">I am passionate about crafting unique digital experiences through design, animation, and web development. By blending creativity with technology, I bring innovative projects to life.</p>
-                    <button class="bordeRedondo parrafos sinBorde alturaBotones fuente paddingBotones fitContent df centerY">Download CV</button>
+            <div class="w80 vh60 df columna spacea centerX centerY w50t w100m vh30m">
+            
+                    <h1 class="fuente titPrinc blanco">Hi! I'm Victoria Villalba</h1>
+                    <p class="parrafoPrinci fuente textCenter blanco">I am passionate about crafting unique digital experiences through design, animation, and web development. By blending creativity with technology, I bring innovative projects to life.</p>
+
+                    <div class="df w50 spacea">
+                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones">Download CV</button>
+                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones">See projects</button>
+                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones">Contact me</button>
+                    </div>
+                
+            </div>
+
+            <!--<div class="w40 h100 w100m">
+                <img class="h100 w100" src="assets/imgs/banner.jpg" alt="">
+            </div>-->
+
+        </section>
+
+        </div>
+
+        <section id="sobreMi" class="vh60 fondoNegro df columna spaceb marginTop2 centerY">
+
+            <div class="w70 vh60 df columna spaceb">
+
+            <h2 class="subtitulos fuente blanco w100 vh10">About me</h2>
+
+            <div class="df spaceb w100 vh40">
+
+                <div class="h100 w30">
+                    <img class="objCover redondo h100 w100" src="assets/imgs/cuadrada-victoria.png" alt="">
+                </div>
+
+                <div class="df columna w60 centerX">
+                    <p class="parrafos fuente blanco">I am currently pursuing a degree in Multimedia Technology, where I explore how to combine visual design, animation, and web development to create impactful digital experiences.</p>
+                    <p class="parrafos fuente invisibleM blanco"> I specialize in Front-End development, focusing on clean, responsive, and functional design. I also enjoy working with tools like CSS Grid, Flexbox, and modern technologies such as JavaScript, Tailwind CSS, and Figma.</p>
+                    <a href="" class="fuente invisible visibleM blanco">Leer más...</a>
                 </div>
             </div>
 
-            <div class="w40 h100 w100m">
-                <img class="h100 w100" src="assets/imgs/banner.jpg" alt="">
-            </div>
-
-        </section>
-
-        <section id="sobreMi" class="rosita bordeRedondo dg vh50">
-
-            <!--armarla en grid-->
-
-            <h2 class="subtitulos fuente">Sobre Mi</h2>
-
-            <img class="h80 objCover bordeRedondo" src="assets/imgs/foto Victoria Villalba.png" alt="">
-
-            <div class="df columna spaceb w90">
-                <p class="parrafos fuente">I am currently pursuing a degree in Multimedia Technology, where I explore how to combine visual design, animation, and web development to create impactful digital experiences.</p>
-                <p class="parrafos fuente invisibleM"> I specialize in Front-End development, focusing on clean, responsive, and functional design. I also enjoy working with tools like CSS Grid, Flexbox, and modern technologies such as JavaScript, Tailwind CSS, and Figma.</p>
-                <a href="" class="fuente invisible visibleM blanco">Leer más...</a>
-            </div>
+        </div>
 
 
         </section>
 
-        <section id="proyectos" class="bordeRedondo df columna">
+        <section id="proyectos" class="df columna centerY w100">
 
-            <!--estos los podría generar de manera dinámica, los p pueden salir en modal-->
+            <!--estos los podría generar de manera dinámica, los p pueden salir en modal con boton que lo dirija al proyecto-->
 
-            <h2 class="subtitulos alturaBotones fuente">Proyectos</h2>
+            <div class="w70">
+
+            <h2 class="subtitulos alturaBotones fuente blanco">Projects</h2>
 
             <div id="contProyectos" class="dg">
 
-            <article id="proyecto1" class="bordeRedondo lavanda df centerX centerY">
+            <article id="proyecto1" class="bordeRedondo df centerX centerY proyecto">
                 
                 <div class="df columna centerX centerY spaceb h90 w90">
                     <img class="h80 w100 bordeRedondo objCover" src="assets/imgs/landing-page.jpg" alt="">
-                    <h3 class="subtitulos-peque fuente">Landing Page para una Marca de Moda Sostenible</h3>
+                    <h3 class="subtitulos-peque fuente blanco textCenter">Landing Page para una Marca de Moda Sostenible</h3>
                 </div>
              
             </article>
             
-            <article id="proyecto2" class="df centerX centerY bordeRedondo lavanda">
+            <article id="proyecto2" class="df centerX centerY bordeRedondo proyecto">
                 <div class="df centerX centerY spaceb h90 w90">
                     <img class="h80 w50 bordeRedondo objCover" src="assets/imgs/social-media.jpg" alt="">
-                    <h3 class="subtitulos-peque fuente w40">Animación 2D para Redes Sociales</h3>
+                    <h3 class="subtitulos-peque fuente w40 blanco">Animación 2D para Redes Sociales</h3>
                 </div>
             </article>
             
-            <article id="proyecto3" class="df centerX centerY bordeRedondo lavanda">
+            <article id="proyecto3" class="df centerX centerY bordeRedondo proyecto">
                 <div class="df centerX centerY spaceb h90 w90">
                     <img class="h80 w50 bordeRedondo objCover" src="assets/imgs/javascript-game.jpg" alt="">
-                    <h3 class="subtitulos-peque fuente w40">Juego Interactivo en JavaScript</h3>
+                    <h3 class="subtitulos-peque fuente w40 blanco">Juego Interactivo en JavaScript</h3>
                 </div>
             </article>
             
-            <article id="proyecto4" class="df centerX centerY bordeRedondo lavanda dobleFila">
+            <article id="proyecto4" class="df centerX centerY bordeRedondo dobleFila proyecto">
                 <div class="df centerX centerY spaceb h90 w90">
                     <img class="h80 w50 bordeRedondo objCover" src="assets/imgs/portfolio-weebsite.jpg" alt="">
-                    <h3 class="subtitulos-peque fuente w40">Sitio Web de Portafolio Personal</h3>
+                    <h3 class="subtitulos-peque fuente w40 blanco">Sitio Web de Portafolio Personal</h3>
                 </div>
             </article>
             
-            <article id="proyecto5" class="df centerX centerY bordeRedondo lavanda dobleFila">
+            <article id="proyecto5" class="df centerX centerY bordeRedondo dobleFila proyecto">
                 <div class="df centerX centerY spaceb h90 w90">
                     <img class="h80 w50 bordeRedondo objCover" src="assets/imgs/infografia-animada.jpg" alt="">
-                    <h3 class="subtitulos-peque w40 fuente">Infografía Animada sobre Energías Renovables</h3>
+                    <h3 class="subtitulos-peque w40 fuente blanco">Infografía Animada sobre Energías Renovables</h3>
                 </div>
             </article>
             
-            <article id="proyecto6" class="df centerX centerY bordeRedondo lavanda">
+            <article id="proyecto6" class="df centerX centerY bordeRedondo proyecto">
                 <div class="df columna centerX centerY spaceb h90 w90">
                     <img class="h80 w100 bordeRedondo objCover" src="assets/imgs/diseño-figma.jpg" alt="">
-                    <h3 class="subtitulos-peque fuente">Prototipo de Aplicación Móvil en Figma</h3>
+                    <h3 class="subtitulos-peque fuente blanco textCenter">Prototipo de Aplicación Móvil en Figma</h3>
                 </div>
             </article>
 
@@ -134,115 +152,135 @@
                 <p></p>
             </dialog>-->
 
+            </div>
+
         </section>
 
-        <section id="habilidades" class="menta bordeRedondo df columna spacee centerX centerY vh50 vh70t">
+        <div class="fondo-final w100">
+
+        <section id="habilidades" class="df columna spacee centerX centerY vh60 vh70t marginTop2 w100">
 
             <!--armarla en grid-->
+            <div class="w70 vh60 df columna spacea">
 
-            <h2 class="subtitulos">Habilidades</h2>
+            <h2 class="subtitulos blanco">Habilidades</h2>
 
-            <div id="contHabilidades" class="dg w80">
+            <div id="contHabilidades" class="dg w100">
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spaceb w80 h80">
-                    <i class="fa-regular fa-comments"></i>
-                    <h4 class="parrafos fuente textCenter">Comunicación Eficaz</h4>
+                    <i class="fa-regular fa-comments blanco blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Comunicación Eficaz</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-people-group"></i>
-                    <h4 class="parrafos fuente textCenter">Trabajo en Equipo</h4>
+                    <i class="fa-solid fa-people-group blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Trabajo en Equipo</h4>
                 </div>
              </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    <h4 class="parrafos fuente textCenter">Creatividad</h4>
+                    <i class="fa-regular fa-lightbulb blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Creatividad</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <h4 class="parrafos fuente textCenter">Resolucion de Problemas</h4>
+                    <i class="fa-solid fa-circle-exclamation blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Resolucion de Problemas</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-shuffle"></i>
-                    <h4 class="parrafos fuente textCenter">Adaptabilidad</h4>
+                    <i class="fa-solid fa-shuffle blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Adaptabilidad</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-clock"></i>
-                    <h4 class="parrafos fuente textCenter">Gestión del tiempo</h4>
+                    <i class="fa-solid fa-clock blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Gestión del tiempo</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-hand-point-up"></i>
-                    <h4 class="parrafos fuente textCenter">Atención al detalle</h4>
+                    <i class="fa-solid fa-hand-point-up blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Atención al detalle</h4>
                 </div>
             </div>
 
-            <div class="manteca bordeRedondo df centerX centerY">
+            <div class="df centerX centerY proyecto bordeRedondo">
                 <div class="df centerX centerY spacea w80 h80">
-                    <i class="fa-solid fa-handshake-simple"></i>
-                    <h4 class="parrafos fuente textCenter">Empatía</h4>
+                    <i class="fa-solid fa-handshake-simple blanco"></i>
+                    <h4 class="blanco parrafitos fuente">Empatía</h4>
                 </div>
+            </div>
+
             </div>
 
             </div>
 
         </section>
 
-        <section id="contacto" class="lavanda bordeRedondo df columna centerX centerY spacee vh40m">
+        <section id="contacto" class="df centerX spacee vh60 vh40m">
 
             <!--armarla en grid-->
 
-            <h2 class="subtitulos fuente">Hablemos!</h2>
+            <div class="w70 vh50 df columna spacee">
 
-            <form action="" id="contForm" class="dg w80">
+            <h2 class="subtitulos fuente blanco">Hablemos!</h2>
+
+            <form action="" id="contForm" class="dg w50">
                 <input class="sinBorde bordeRedondo fuente dobleFilaT" type="text" placeholder="Nombre Completo" required>
                 <input class="sinBorde bordeRedondo fuente dobleFilaT" type="tel" placeholder="Teléfono" required>
                 <input class="dobleFila sinBorde bordeRedondo fuente" type="email" placeholder="E-mail"required>
                 <input class="dobleFila sinBorde bordeRedondo fuente" type="textarea" placeholder="Mensaje" required>
-                <button class="bordeRedondo w40 parrafos sinBorde alturaBotones fuente paddingBotones df centerX centerY" type="submit">Enviar</button>
+                <button class="bordeRedondo w40 sinBorde alturaBotones fuente paddingBotones df centerX centerY fontBotones" type="submit">Enviar</button>
             </form>
 
+            </div>
+
         </section>
+
+        </div>
 
     </main>
 
 
-    <footer class="vh20 w80 df spacea melocoton w100m">
+    <footer class="vh20 w100 df spacea w100m">
 
-        <div class="w40 df columna centerX centerY dfM">
-            <p class="parrafos fuente w100m">Contacto:</p>
-            <p class="parrafos fuente w100m">villalbavictoria@gmail.com</p>
-            <p class="parrafos fuente w100m">91734842</p>
-        </div>
+        <div class="w70 df spacea">
 
-        <div class="w30 df centerX centerY spacee">
-            <p class="parrafos fuente invisibleM">Redes Sociales:</p> 
-
-            <div class="alturaBotones df centerX centerY spacea w50 w100m">
-                <a href=""><i class="fa-brands fa-linkedin fa-2x negro"></i></a>
-                <a href=""><i class="fa-brands fa-github fa-2x negro"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-2x negro"></i></a>
+            <div class="w50 df columna centerX centerY dfM">
+                <p class="parrafitos fuente w100m blanco">Contacto:</p>
+                <p class="parrafitos fuente w100m blanco">villalbavictoria@gmail.com</p>
+                <p class="parrafitos fuente w100m blanco">91734842</p>
             </div>
+
+            <div class="df centerX centerY spacee w50">
+                <p class="parrafitos fuente invisibleM blanco">Redes Sociales:</p> 
+
+                <div class="alturaBotones df centerX centerY spacea w30 w100m">
+                    <a href=""><i class="fa-brands fa-linkedin fa-2x blanco"></i></a>
+                    <a href=""><i class="fa-brands fa-github fa-2x blanco"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x blanco"></i></a>
+                </div>
+            </div>
+
         </div>
+
         
 
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
