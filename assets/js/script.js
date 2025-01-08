@@ -187,3 +187,28 @@ for (let i=0; i<habilidades.length; i++){
     contHabilidades.appendChild(container);
 
 }
+
+/*menu hamburguesa*/
+
+const nav = document.getElementById("nav")
+const cerrar = document.getElementById("cerrar-menu");
+const abrir = document.getElementById("abrir-menu");
+
+abrir.addEventListener('click', ()=>{
+    nav.classList.add("visible");
+});
+
+cerrar.addEventListener('click', ()=>{
+    nav.classList.remove("visible");
+});
+
+/*esto es para que cuando se toque en algun link del menu vaya a la section ocultando el nav*/
+
+const links = document.querySelectorAll('#nav-list li a');
+
+links.forEach(link=>{
+    link.addEventListener('click', ()=>{
+        nav.classList.remove("visible");
+    })
+})
+

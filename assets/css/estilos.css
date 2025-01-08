@@ -352,9 +352,6 @@ button{
 /*TABLET*/
 @media (max-width: 960px){
 
-    .visibleT{
-        display: block;
-    }
     .invisibleT{
         display: none;
     }
@@ -388,6 +385,55 @@ button{
         flex-direction: column;
         justify-content: space-evenly;
     }
+
+    /*menu hamburguesa - se puede resumir desp con clases utiles*/
+
+    #abrir-menu, #cerrar-menu{
+        display: block;
+    }
+
+    #nav{
+        opacity: 0;
+        visibility: hidden;
+
+        height: 100vh;
+        width: 40%;
+        background-color: blueviolet;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1em;
+        top: 0;
+        right: 0;
+        padding: 3em;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7);
+    }
+
+    #nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #nav-list{
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    /*acomode algunas cositas, ver si puedo resumir desp con clases utiles*/
+
+    #header{
+        display: flex;
+        justify-content: end;
+    }
+
+    #abrir-menu{
+        margin-right: 2em;
+    }
+
+
+
 }
 
 @media (max-width: 600px){
@@ -455,5 +501,7 @@ button{
     .marginBottomM{
         margin-bottom: 3em;
     }
+
+
 }
 
