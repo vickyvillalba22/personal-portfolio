@@ -53,27 +53,6 @@ header{
     background-color: rgba(0,0,0,0.5);
 }
 
-#heroSection{
-    grid-area: section1;
-}
-
-#sobreMi{
-    grid-area: section2;
-}
-
-#sobreMi img{
-    grid-area: 1 / 1 / 4 / 2;
-    object-position: center 10%;
-}
-
-#sobreMi h2{
-    grid-area: 1 / 2 / 2 / 4;
-}
-
-#sobreMi div{
-    grid-area: 2 / 2 / 4 / 4;
-}
-
 #proyectos{
     margin-top: 5em;
 }
@@ -352,6 +331,10 @@ button{
 /*TABLET*/
 @media (max-width: 960px){
 
+    header{
+        height: 3em;
+    }
+
     .invisibleT{
         display: none;
     }
@@ -362,6 +345,19 @@ button{
     .vh70t{
         min-height: 70vh;
     }
+    .vh80t{
+        height: 80vh;
+    }
+    .vh40t{
+        height: 40vh;
+    }
+
+    .w90t{
+        width: 90%;
+    }
+    .w70t{
+        width: 70%;
+    }
     .w50t{
         width: 50%;
     }
@@ -371,19 +367,48 @@ button{
     }
 
     #contHabilidades{
-        grid-template: repeat(8, 3em) / 100%;
+        grid-template: repeat(4, 3em);
         gap: 1em;
     }
 
-    #contForm{
-        grid-template-rows: repeat(5, 2.5em);
-        gap: 1em;
-    }
 
     #habilidades{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .achicar{
+        transform: scale(0.8);
+    }
+    .textCenterT{
+        text-align: center;
+    }
+    .dfT{
+        display: flex;
+    }
+    .centerXt{
+        justify-content: center;
+    }
+    .centerYt{
+        align-items: center;
+    }
+    .columnaT{
+        flex-direction: column;
+    }
+    .spacebT{
+        justify-content: space-between;
+    }
+    .spaceeT{
+        justify-content: space-evenly;
+    }
+
+    .fondo-final{
+        background-image: url("../imgs/foco-violeta.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 160%;
+        background-position: 40%;
     }
 
     /*menu hamburguesa - se puede resumir desp con clases utiles*/
@@ -418,7 +443,6 @@ button{
     #nav-list{
         flex-direction: column;
         align-items: end;
-
     }
 
     /*acomode algunas cositas, ver si puedo resumir desp con clases utiles*/
@@ -431,8 +455,6 @@ button{
     #abrir-menu{
         margin-right: 2em;
     }
-
-
 
 }
 
