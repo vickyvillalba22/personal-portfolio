@@ -113,18 +113,20 @@
 
             </div>
 
-            <dialog id="modalProyecto" class=" w50 vh60 bordeRedondo sinBorde">
+            <dialog id="modalProyecto" class="w50 vh60 bordeRedondo sinBorde w90t vh80m">
 
-                <div class="df spaceb h100">
+                <div class="df spaceb vh60 dfM columnaM bordeRojo centerYm spacebM vh80m">
 
-                <img class="w50 objCover" src="assets/imgs/floria-project.png" alt="">
-                <div class="df centerY spacea w50">
-                    <div class="w90 df columna spacea h90">
-                        <!--este boton va con iconos-->
+                <img class="w50 objCover bordeRedondo w100m vh30m" alt="">
+                <div class="df centerY spacea w50 w90m">
+                    <div class="w90 df columna spacea h90 w100m centerYm bordeRojo vh30m">
+                        <!--este boton va con iconos y en mobile va encima de la foto-->
                         <button id="cerrarDialog" class="fitContent paddingBotones bordeRedondo fuente sinBorde">Close</button>
                         <h3 class="fuente blanco">Website front-end developement for a pre-designed canva</h3>
                         <p class="fuente blanco">Creación de una landing page moderna y responsiva para una marca de ropa sostenible. Utilicé HTML, CSS y JavaScript para diseñar un sitio visualmente atractivo, con animaciones suaves al desplazarse y una experiencia de usuario optimizada para dispositivos móviles.</p>
-                        <button class="sinBorde fontBotones fuente paddingBotones fitContent bordeRedondo">Go to project</button>
+
+                        <!--aca habría que ver el tema de que el a, ocupe todo el boton.  y tambien, que hago con el proyecto de portfolio, capaz lo puedo reemplazar por otro trabajo-->
+                        <button id="botonProject" class="sinBorde paddingBotones fitContent bordeRedondo"><a id="go" target="_blank" class="negro fontBotones fuente">Go to project</a></button>
                     </div>
                 </div>
                 </div>
@@ -151,6 +153,8 @@
             </div>
 
         </section>
+
+        <!--se le puede agregar otra section con los trabajos de branding y diseño -->
 
         <section id="contacto" class="df centerX spacee vh60 vh40m vh40t">
 

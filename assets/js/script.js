@@ -1,43 +1,43 @@
 const descProyectos = [
 
     {
-        desc: "Creación de una landing page moderna y responsiva para una marca de ropa sostenible. Utilicé HTML, CSS y JavaScript para diseñar un sitio visualmente atractivo, con animaciones suaves al desplazarse y una experiencia de usuario optimizada para dispositivos móviles.",
+        desc: "Layout of a modern and responsive website based on a pre-designed template. I used HTML, CSS, and JavaScript to design a visually appealing site, with a user experience optimized for different devices.",
         enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
         titulo: "Website front-end developement for a pre-designed canva",
         source: "assets/imgs/floria-project.png"
     },
 
     {
-        desc:"Desarrollé un reel animado en After Effects para promocionar un producto tecnológico en redes sociales. El proyecto incluyó diseño de gráficos, edición de audio y sincronización de efectos visuales para captar la atención del público objetivo.",
-        enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
+        desc:"In this typographic animation project, I explored the movement and dynamism of words using After Effects. I aimed to transform typography into an attractive and expressive visual element, combining graphic design and animation to convey messages in a unique way.",
+        enlace: "https://drive.google.com/file/d/1PhY-wYa7TTwMAldNJsQPI5t5sFd-s8j1/view?usp=drive_link",
         titulo: "Typographic Animation",
         source: "assets/imgs/animacion-tipo.png"
     },
 
     {   
-        desc:"Diseñé y programé un juego interactivo en JavaScript utilizando Canvas. El juego incluye mecánicas de colisión, puntuación y efectos visuales que brindan una experiencia dinámica. Fue diseñado como parte de un proyecto para enseñar conceptos básicos de programación de forma divertida.",
-        enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
+        desc:"I designed and programmed an interactive game in JavaScript. The game includes scoring and visual effects that provide a dynamic experience. It was created as part of a project to teach basic programming concepts in a fun way.",
+        enlace: "https://juego-bomba-de-tiempo-first-year.vercel.app/",
         titulo: "JavaScript Game",
         source: "assets/imgs/javascript-game.jpg"
     },
 
     {
-        desc:"Creé un sitio web de portafolio personal utilizando CSS Grid y Flexbox. El diseño es limpio y responsivo, con una sección de proyectos interactiva que incluye filtros y animaciones personalizadas para destacar cada trabajo.",
+        desc:"I created a personal portfolio website using CSS Grid and Flexbox. The design is clean and responsive, with an interactive project section to showcase each work.",
         enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
         titulo: "Website for Personal Portfolio",
         source: "assets/imgs/portfolio-weebsite.jpg"
     },
 
     {
-        desc: "Desarrollé una infografía animada interactiva sobre energías renovables utilizando HTML, CSS y SVG. El proyecto combina datos visuales con animaciones dinámicas para educar al usuario de manera atractiva y didáctica.",
-        enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
+        desc: "Development of a music video featuring a fellow singer. The project was done collaboratively, where I was responsible for directing, sound production, and editing.",
+        enlace: "https://youtu.be/KH8t42iJ0Tc",
         titulo: "Music Video Production for Artist",
         source: "assets/imgs/videoclip-project.png"
     },
 
     {
-        desc:"Diseñé un prototipo funcional de una aplicación móvil para organizar tareas y gestionar el tiempo. Incluí wireframes, un diseño intuitivo y una navegación interactiva que permite simular la experiencia del usuario.",
-        enlace: "https://villalba-zalcman-pf-maquetado.vercel.app/",
+        desc:"I designed a functional prototype of a mobile app for task organization and time management. It includes wireframes, an intuitive design, and interactive navigation that allows simulating the user experience.",
+        enlace: "https://www.behance.net/gallery/185073747/Trabajo-universitario-Grido-Infantil",
         titulo: "Mobile App Prototype in Figma",
         source: "assets/imgs/grido-app.png"
     }
@@ -46,8 +46,31 @@ const descProyectos = [
 
 const miDialog = document.getElementById("modalProyecto");
 const cerrarDialog = document.getElementById("cerrarDialog");
+const goto = document.getElementById("go");
+
+let imagenDialog = document.querySelector("dialog img");
+let tituloDialog = document.querySelector("dialog h3");
+let descDialog = document.querySelector("dialog p");
+let linkDialog = document.querySelector("dialog a");
+let botonDialog = document.getElementById("botonProject");
 
 function showModal(){
+
+    let pos = this.getAttribute('position');
+
+    if (pos==3){
+        botonDialog.classList.add("invisible");
+        linkDialog.classList.add("invisible");
+    } else {
+        botonDialog.classList.remove("invisible");
+        linkDialog.classList.remove("invisible");
+    }
+
+    imagenDialog.setAttribute("src", descProyectos[pos].source);
+    tituloDialog.innerText = descProyectos[pos].titulo;
+    descDialog.innerText = descProyectos[pos].desc;
+    linkDialog.setAttribute("href", descProyectos[pos].enlace);
+
     miDialog.showModal();
 }
 
@@ -81,6 +104,7 @@ for (let i=0; i<descProyectos.length; i++){
 
     let articulo = document.createElement("article");
     articulo.setAttribute("id", `proyecto${ids}`);
+    articulo.setAttribute("position", i);
     articulo.classList.add("bordeRedondo", "df", "centerX", "centerY", "proyecto");
 
     articulo.addEventListener('click', showModal);
@@ -109,8 +133,6 @@ for (let i=0; i<descProyectos.length; i++){
     articulo.appendChild(contenedor);
 
     contProyectos.appendChild(articulo);
-
-    //console.log(articulo);
 
     ids++;
 
