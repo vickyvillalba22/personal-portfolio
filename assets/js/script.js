@@ -42,7 +42,20 @@ const descProyectos = [
         source: "assets/imgs/grido-app.png"
     }
 
-]
+];
+
+const miDialog = document.getElementById("modalProyecto");
+const cerrarDialog = document.getElementById("cerrarDialog");
+
+function showModal(){
+    miDialog.showModal();
+}
+
+cerrarDialog.addEventListener('click', ()=>{
+    miDialog.close();
+})
+
+
 
 /*movimiento header*/
 
@@ -69,6 +82,8 @@ for (let i=0; i<descProyectos.length; i++){
     let articulo = document.createElement("article");
     articulo.setAttribute("id", `proyecto${ids}`);
     articulo.classList.add("bordeRedondo", "df", "centerX", "centerY", "proyecto");
+
+    articulo.addEventListener('click', showModal);
 
     let contenedor = document.createElement("div");
     contenedor.classList.add("df", "centerX", "centerY", "spaceb", "h90", "w90");
@@ -168,6 +183,10 @@ for (let i=0; i<habilidades.length; i++){
     let container = document.createElement("div");
     container.classList.add("df", "centerX", "centerY", "proyecto", "bordeRedondo");
 
+    if (i>5){
+        container.classList.add("invisibleM")
+    }
+
     let contenedorcito = document.createElement("div");
     contenedorcito.classList.add("df", "centerX", "centerY", "spacee", "w70", "h80");
 
@@ -210,5 +229,23 @@ links.forEach(link=>{
     link.addEventListener('click', ()=>{
         nav.classList.remove("visible");
     })
-})
+});
+
+/*read more*/
+
+let readmore = document.getElementById("readmore");
+let pOculto = document.getElementById("parrafoOculto");
+
+readmore.addEventListener('click', ()=>{
+    pOculto.classList.toggle("invisibleM");
+    
+    if (pOculto.classList.contains("invisibleM")){
+        readmore.innerHTML="Read more..."
+    } else {
+        readmore.innerHTML="Less"
+    }
+
+});
+
+
 

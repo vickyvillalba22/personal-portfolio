@@ -6,32 +6,20 @@
     font-family: sans-serif;
 }
 
-.melocoton{
-    background-color: #FAD4C0;
-}
-
-.menta{
-    background-color: #B4E4D5;
-}
-
-.lavanda{
-    background-color: #D6C7F2;
-}
-
-.manteca{
-    background-color: #FDF5C9;
-}
-
-.rosita{
-    background-color: #F3C1CF;
-}
-
 .negro{
     color: black;
 }
 
+.violeta{
+    color: rgb(189, 119, 255);
+}
+
 .blanco{
     color: white;
+}
+
+.transparente{
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .fondoNegro{
@@ -62,6 +50,17 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 10em);
     gap: 2em;
+}
+
+dialog{
+    background-color: rgb(97, 0, 188);
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.7);
+    top: 20%;
+    left: 25%;
+}
+
+dialog img{
+    border-radius: 25px;
 }
 
 .fondo-final{
@@ -479,7 +478,7 @@ button{
         font-size: 3em;
     }
     .parrafoPrinci{
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .w100m{
@@ -491,15 +490,18 @@ button{
     .w80m{
         width: 80%;
     }
+    .w50m{
+        width: 50%;
+    }
     .w20m{
         width: 20%;
     }
 
-    .vh30m{
-        min-height: 30vh;
+    .vh70m{
+        min-height: 70vh;
     }
-    .vh40m{
-        min-height: 40vh;
+    .vh80m{
+        min-height: 80vh;
     }
     .vh90m{
         min-height: 90vh;
@@ -511,7 +513,15 @@ button{
     .dfM{
         display: flex;
     }
-
+    .centerYm{
+        align-items: center;
+    }
+    .spacebM{
+        justify-content: space-between;
+    }
+    .spaceaM{
+        justify-content: space-around;
+    }
     .columnaM{
         flex-direction: column;
     }
@@ -527,6 +537,11 @@ button{
         margin-bottom: 3em;
     }
 
+    #contHabilidades{
+        grid-auto-rows: 3em;
+        grid-template-columns: 1fr;
+        gap: 1.5em;
+    }
 
 }
 
