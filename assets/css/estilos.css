@@ -39,7 +39,7 @@
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
@@ -246,6 +246,10 @@ ul{
     font-family: "poppins", sans-serif;
 }
 
+strong{
+    font-weight: 600;
+}
+
 .titPrinc{
     font-size: 5em;
     font-weight: 600;
@@ -335,6 +339,13 @@ button{
         height: 3em;
     }
 
+    .titPrinc{
+        font-size: 4em;
+    }
+    .parrafos{
+        font-size: 1.1em;
+    }
+
     .invisibleT{
         display: none;
     }
@@ -348,6 +359,9 @@ button{
     .vh80t{
         height: 80vh;
     }
+    .vh60t{
+        height: 60vh;
+    }
     .vh40t{
         height: 40vh;
     }
@@ -357,6 +371,9 @@ button{
     }
     .w70t{
         width: 70%;
+    }
+    .w60t{
+        width: 60%;
     }
     .w50t{
         width: 50%;
@@ -371,16 +388,6 @@ button{
         gap: 1em;
     }
 
-
-    #habilidades{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .achicar{
-        transform: scale(0.8);
-    }
     .textCenterT{
         text-align: center;
     }
@@ -448,7 +455,6 @@ button{
     /*acomode algunas cositas, ver si puedo resumir desp con clases utiles*/
 
     #header{
-        display: flex;
         justify-content: end;
     }
 
@@ -456,37 +462,31 @@ button{
         margin-right: 2em;
     }
 
+    footer{
+        margin-top: 4em;
+    }
+
 }
 
 @media (max-width: 600px){
-
-    main{
-        grid-template-areas: 
-                            "section1"
-                            "section2"
-                            "section3"
-                            "section4"
-                            "section5";
-                            grid-template-columns: 1fr; 
-                            gap: 4em;
-    }
-
-    #heroSection{
-        flex-direction: column-reverse;
-    }
 
     #contProyectos{
         display: flex;
         flex-direction: column;
     }
 
-    h1{
-        font-size: 0.5em;
-        text-align: center;
+    .titPrinc{
+        font-size: 3em;
+    }
+    .parrafoPrinci{
+        font-size: 1.4em;
     }
 
     .w100m{
         width: 100%;
+    }
+    .w90m{
+        width: 90%;
     }
     .w80m{
         width: 80%;
@@ -503,6 +503,9 @@ button{
     }
     .vh90m{
         min-height: 90vh;
+    }
+    .vh100m{
+        min-height: 100vh;
     }
 
     .dfM{
