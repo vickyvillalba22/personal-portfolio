@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -29,11 +32,12 @@
         <!--ponerle iconos de librerias-->
         <!--mantener el header todo el camino-->
 
-        <button id="abrir-menu" class="invisible fontBotones paddingBotones bordeRedondo sinBorde">Menu</button>
+        <button id="abrir-menu" class="invisible fontBotones paddingBotones bordeRedondo sinBorde transparente"><i class="bi bi-list blanco"></i></button>
+
 
         <nav id="nav" class="df w50 centerY">
 
-            <button id="cerrar-menu" class="invisible fontBotones paddingBotones bordeRedondo sinBorde">Cerrar</button>
+            <button id="cerrar-menu" class="invisible fontBotones paddingBotones bordeRedondo sinBorde transparente"><i class="bi bi-x blanco"></i></button>
 
             <ul id="nav-list" class="df w100 spacea">
                 <li><a id="sobreMi" class="parrafos blanco fuente" href="#sobreMi">About me</a></li>
@@ -115,14 +119,16 @@
 
             <dialog id="modalProyecto" class="w50 vh60 bordeRedondo sinBorde w90t vh80m">
 
-                <div class="df spaceb vh60 dfM columnaM bordeRojo centerYm spacebM vh80m">
+                <div class="df spaceb vh60 dfM columnaM centerYm spacebM vh80m">
 
-                <img class="w50 objCover bordeRedondo w100m vh30m" alt="">
-                <div class="df centerY spacea w50 w90m">
-                    <div class="w90 df columna spacea h90 w100m centerYm bordeRojo vh30m">
+                <img class="w50 objCover bordeRedondo w100m vh40m" alt="">
+                <div class="df centerY spacea w50 w90m vh40m">
+                    <div class="w90 df columna spacea h90 w100m centerYm vh40m">
                         <!--este boton va con iconos y en mobile va encima de la foto-->
-                        <button id="cerrarDialog" class="fitContent paddingBotones bordeRedondo fuente sinBorde">Close</button>
+                        <button id="cerrarDialog" class="fitContent bordeRedondo fuente sinBorde"><i class="bi bi-x"></i></button>
                         <h3 class="fuente blanco">Website front-end developement for a pre-designed canva</h3>
+
+                        <!--ver como hago con el texto que le puse para cortarlo en mobile-->
                         <p class="fuente blanco">Creación de una landing page moderna y responsiva para una marca de ropa sostenible. Utilicé HTML, CSS y JavaScript para diseñar un sitio visualmente atractivo, con animaciones suaves al desplazarse y una experiencia de usuario optimizada para dispositivos móviles.</p>
 
                         <!--aca habría que ver el tema de que el a, ocupe todo el boton.  y tambien, que hago con el proyecto de portfolio, capaz lo puedo reemplazar por otro trabajo-->
@@ -162,7 +168,7 @@
 
             <h2 class="subtitulos fuente blanco">Let's talk!</h2>
 
-            <!--validacion form-->
+            <!--validacion y envio de formulario-->
 
             <form action="" id="contForm" class="dg w50 w100m">
                 <input class="sinBorde bordeRedondo fuente dobleFilaT" type="text" placeholder="Full name" required>
@@ -194,9 +200,9 @@
             <div class="df centerX centerY spacee w50"> 
 
                 <div class="alturaBotones df centerX centerY spacea w30 w50t w100m">
-                    <a href=""><i class="fa-brands fa-linkedin fa-2x blanco"></i></a>
-                    <a href=""><i class="fa-brands fa-github fa-2x blanco"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fa-2x blanco"></i></a>
+                    <a href="https://www.linkedin.com/in/victoria-villalba-a05a66293/" target="_blank"><i class="fa-brands fa-linkedin fa-2x blanco"></i></a>
+                    <a href="https://github.com/vickyvillalba22" target="_blank"><i class="fa-brands fa-github fa-2x blanco"></i></a>
+                    <a href="https://www.instagram.com/_vickyvillalba/" target="_blank"><i class="fa-brands fa-instagram fa-2x blanco"></i></a>
                 </div>
             </div>
 

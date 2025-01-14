@@ -144,56 +144,56 @@ const habilidades = [
 
     {
         hab: "Communication",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-chat"
     },
 
     {
         hab: "Teamwork",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-people"
     },
 
     {
         hab: "Creativity",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-lightbulb"
     },
 
     {
         hab: "Problem Solving",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-gear"
     },
 
     {
         hab: "Adaptability",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-shuffle"
     },
 
     {
         hab: "Time Management",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-clock"
     },
 
     {
         hab: "Attention to Detail",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-search"
     },
 
     {
         hab: "Empathy",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-hand-thumbs-up"
     },
 
     {
         hab: "Critical Thinking",
-        icono1: "fa-regular", 
-        icono2: "fa-comments"
+        icono1: "bi", 
+        icono2: "bi-hand-index"
     },
 
 ]
@@ -214,7 +214,7 @@ for (let i=0; i<habilidades.length; i++){
 
     let icono = document.createElement("i");
     icono.classList.add(habilidades[i].icono1, habilidades[i].icono2);
-    icono.classList.add("blanco");
+    icono.classList.add("blanco", "parrafitos");
 
     let habilidad = document.createElement("h4");
     habilidad.classList.add("blanco", "parrafitos", "fuente");

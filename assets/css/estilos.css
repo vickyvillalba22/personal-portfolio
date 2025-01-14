@@ -325,6 +325,11 @@ button{
     margin-top: 2em;
 }
 
+
+i{
+    font-size: 2.5em;
+}
+
 /*MEDIA QUERY*/
 
 /*TABLET*/
@@ -428,7 +433,7 @@ button{
         visibility: hidden;
 
         height: 100vh;
-        width: 40%;
+        width: 50%;
         background-color: blueviolet;
         position: absolute;
         display: flex;
@@ -465,6 +470,7 @@ button{
         margin-top: 4em;
     }
 
+
 }
 
 @media (max-width: 600px){
@@ -475,10 +481,19 @@ button{
     }
 
     dialog{
-        position: relative;
-        top: 5%;
+        /*display: flex;*/
+        position: fixed;
+        top: 10%;
+        text-align: center;
     }
 
+    dialog p{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        line-clamp: initial;
+        -webkit-line-clamp: 4;
+    }
 
     #cerrarDialog{
         position: absolute;
@@ -509,8 +524,8 @@ button{
         width: 20%;
     }
 
-    .vh30m{
-        min-height: 30vh;
+    .vh40m{
+        height: 40vh;
     }
     .vh70m{
         min-height: 70vh;
