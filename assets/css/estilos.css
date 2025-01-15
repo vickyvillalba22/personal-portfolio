@@ -524,6 +524,9 @@ i{
         width: 20%;
     }
 
+    .vh30m{
+        min-height: 30vh;
+    }
     .vh40m{
         height: 40vh;
     }
@@ -572,6 +575,8 @@ i{
         grid-template-columns: 1fr;
         gap: 1.5em;
     }
+
+
 
 }
 
