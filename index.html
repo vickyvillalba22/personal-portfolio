@@ -168,14 +168,15 @@
 
             <h2 class="subtitulos fuente blanco">Let's talk!</h2>
 
-            <!--validacion y envio de formulario-->
+            <!--validacion y envio de formulario. poner labels y en los place holders ejemplos de como se debe completar cada campo-->
 
             <form action="" id="contForm" class="dg w50 w100m">
-                <input class="sinBorde bordeRedondo fuente dobleFilaT" type="text" placeholder="Full name" required>
-                <input class="sinBorde bordeRedondo fuente dobleFilaT" type="tel" placeholder="Phone" required>
-                <input class="dobleFila sinBorde bordeRedondo fuente" type="email" placeholder="E-mail"required>
-                <input class="dobleFila sinBorde bordeRedondo fuente" type="textarea" placeholder="Message" required>
-                <button class="bordeRedondo w40 sinBorde alturaBotones fuente paddingBotones df centerX centerY fontBotones" type="submit">Send</button>
+                <input id="name" class="sinBorde bordeRedondo fuente dobleFilaT" type="text" placeholder="Full name" required>
+                <input id="phone" class="sinBorde bordeRedondo fuente dobleFilaT" type="number" placeholder="Phone" required>
+                <input id="email" class="dobleFila sinBorde bordeRedondo fuente" type="email" placeholder="E-mail"required>
+                <input id="message" class="dobleFila sinBorde bordeRedondo fuente" type="textarea" placeholder="Message" required>
+                <p id="campoError" class="dobleFila invisible blanco fuente"></p>
+                <button id="send" class="bordeRedondo w40 sinBorde alturaBotones fuente paddingBotones df centerX centerY fontBotones" type="submit">Send</button>
             </form>
 
             </div>
@@ -191,7 +192,7 @@
 
         <div class="w70 df spacea columnaM centerYm">
 
-            <div class="w50 df columna centerX centerY dfM textCenterT bordeRojo w80m">
+            <div class="w50 df columna centerX centerY dfM textCenterT w80m">
                 <p><strong class="fuente w100m blanco">Contact:</strong></p>
                 <p class="parrafitos fuente w100m blanco">villalbavictoria@gmail.com</p>
                 <p class="parrafitos fuente w100m blanco">91734842</p>

@@ -269,5 +269,90 @@ readmore.addEventListener('click', ()=>{
 
 });
 
+/*validacion form*/
+
+let campoError = document.getElementById("campoError");
+let send = document.getElementById("send");
+
+/*nombre*/
+
+let campoNombre = document.getElementById("name");
+
+function validarNombre(){
+
+    let regex = /\d/; // Busca cualquier número en el texto. Devuelve true o false
+
+    if (regex.test(campoNombre.value)){
+        //en este caso devuelve true
+        campoError.innerHTML += "The name cannot contain numbers <br>";
+        campoError.classList.remove("invisible");
+        campoNombre.classList.remove("sinBorde");
+        campoNombre.classList.add("bordeRojo");
+    }
+
+    if (campoNombre.value.length < 3){
+        campoError.classList.remove("invisible");
+        campoNombre.classList.remove("sinBorde");
+        campoNombre.classList.add("bordeRojo");
+        campoError.innerHTML += "Name must have at least 3 characters <br>";
+    }
+
+}
+
+/*telefono*/
+
+let campoTel = document.getElementById("phone");
+
+/*function validarTel (){
+
+    let regex = /^\d{8,15}$/; //Esto valida que la cadena contenga solo números y que su longitud esté entre 8 y 15.
+
+    if (regex.test(campoTel.value)){
+        campoError.innerHTML += "Phone must have only numbers, and it must be of between 8 and 15 numbers  <br>";
+        campoError.classList.remove("invisible");
+        campoTel.classList.remove("sinBorde");
+        campoTel.classList.add("bordeRojo");
+    }
+
+}*/
+
+/*mail*/
+
+let campoMail = document.getElementById("email");
+
+function validarMail (){
+
+    let mail = campoMail.value;
+
+    //que tenga arroba y punto
+    if (mail.indexOf("@")==-1 || mail.indexOf(".")==-1){
+        campoError.innerHTML += "Mail must have @ and . <br>";
+        campoError.classList.remove("invisible");
+        campoMail.classList.remove("sinBorde");
+        campoMail.classList.add("bordeRojo");
+    }
+
+    //que haya un punto despues del arroba
+    if (mail.indexOf("@") > mail.lastIndexOf(".")){
+        campoError.innerHTML += "There must be a . after the @ in the email <br>";
+        campoError.classList.remove("invisible");
+        campoMail.classList.remove("sinBorde");
+        campoMail.classList.add("bordeRojo");
+    }
+
+}
+
+
+send.addEventListener('click', (event)=>{
+
+    event.preventDefault();
+
+    validarNombre();
+    //validarTel();
+    validarMail();
+
+});
+
+
 
 
