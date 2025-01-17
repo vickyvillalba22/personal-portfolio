@@ -16,6 +16,8 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <link rel="icon" href="assets/imgs/favicon.png" type="image/png">
+
 </head>
 <body class="df columna centerY fondoNegro">
 
@@ -40,7 +42,7 @@
             <button id="cerrar-menu" class="invisible fontBotones paddingBotones bordeRedondo sinBorde transparente"><i class="bi bi-x blanco"></i></button>
 
             <ul id="nav-list" class="df w100 spacea">
-                <li><a id="sobreMi" class="parrafos blanco fuente" href="#sobreMi">About me</a></li>
+                <li><a class="parrafos blanco fuente" href="#sobreMi">About me</a></li>
                 <li><a class="parrafos blanco fuente" href="#proyectos">Projects</a></li>
                 <li><a class="parrafos blanco fuente" href="#habilidades">Skills</a></li>
                 <li><a class="parrafos blanco fuente" href="#contacto">Contact</a></li>
@@ -60,12 +62,13 @@
                     <p class="parrafoPrinci fuente textCenter blanco">I am passionate about crafting unique digital experiences through design, animation, and web development. By blending creativity with technology, I bring innovative projects to life.</p>
 
                     <div class="df w50 spacea w70t w100m centerYm columnaM spacebM botonesM">
-                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones">Download CV</button>
-                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones invisibleM">See projects</button>
-                        <button class="bordeRedondo sinBorde alturaBotones fuente paddingBotones fitContent df centerY fontBotones invisibleM">Contact me</button>
+
+                        <button class="bordeRedondo sinBorde alturaBotones paddingBotones fitContent df centerY"><a class="fuente fontBotones negro" href="assets/downloads/victoria-villalba-cv-2025-eng.pdf" download="victoria-villalba-cv-2025-eng">Download CV</a></button>
+                        <button class="bordeRedondo sinBorde alturaBotones  paddingBotones fitContent df centerY invisibleM"><a class="fontBotones fuente negro" href="#proyectos">See projects</a></button>
+                        <button class="bordeRedondo sinBorde alturaBotones paddingBotones fitContent df centerY invisibleM"><a class="fuente fontBotones negro" href="#contacto">Contact me</a></button>
                     </div>
 
-                    <!--aca podria agregar una flechita para movile que se mueva indicando hacia abajo-->
+                    <!--aca podria agregar una flechita para mobile que se mueva indicando hacia abajo-->
                 
             </div>
 
@@ -105,8 +108,6 @@
 
         <section id="proyectos" class="df columna centerY w100">
 
-            <!--estos los podría generar de manera dinámica, los p pueden salir en modal con boton que lo dirija al proyecto-->
-
             <div class="w70 w90t">
 
             <h2 class="subtitulos alturaBotones fuente blanco marginTop2">Projects</h2>
@@ -124,7 +125,7 @@
                 <img class="w50 objCover bordeRedondo w100m vh40m" alt="">
                 <div class="df centerY spacea w50 w90m vh40m">
                     <div class="w90 df columna spacea h90 w100m centerYm vh40m">
-                        <!--este boton va con iconos y en mobile va encima de la foto-->
+                        
                         <button id="cerrarDialog" class="fitContent bordeRedondo fuente sinBorde"><i class="bi bi-x"></i></button>
                         <h3 class="fuente blanco">Website front-end developement for a pre-designed canva</h3>
 
@@ -160,7 +161,7 @@
 
         </section>
 
-        <!--se le puede agregar otra section con los trabajos de branding y diseño -->
+        <!--se le puede agregar otra section con los trabajos de branding y diseño. en este caso, de los proyectos se mostrarian 3 primeros con la opcion de ver mas. lo mismo para los trabajos de branding (que estos pueden llevar a otras paginas) -->
 
         <section id="contacto" class="df centerX spacee vh60 vh40m vh40t">
 
@@ -176,7 +177,7 @@
                 <input id="email" class="dobleFila sinBorde bordeRedondo fuente" type="email" placeholder="E-mail"required>
                 <input id="message" class="dobleFila sinBorde bordeRedondo fuente" type="textarea" placeholder="Message" required>
                 <p id="campoError" class="dobleFila invisible blanco fuente"></p>
-                <button id="send" class="bordeRedondo w40 sinBorde alturaBotones fuente paddingBotones df centerX centerY fontBotones" type="submit">Send</button>
+                <button id="send" class="bordeRedondo w40 sinBorde alturaBotones fuente paddingBotones df centerX centerY" type="submit">Send</button>
             </form>
 
             </div>

@@ -112,6 +112,9 @@ ul{
 .bordeRojo{
     border: 3px solid red;
 }
+.bordeVerde{
+    border: 3px solid greenyellow;
+}
 
 .w100{
     width: 100%;
@@ -280,7 +283,7 @@ strong{
 }
 
 .fontBotones{
-    font-size: 0.9em;
+    font-size: 1.1em;
     font-weight: 400;
 }
 
@@ -302,6 +305,10 @@ strong{
 
 button{
     background-color: white;
+}
+
+form button{
+    font-size: 0.9em;
 }
 
 .sinBorde{
@@ -433,7 +440,7 @@ i{
         visibility: hidden;
 
         height: 100vh;
-        width: 50%;
+        width: 30%;
         background-color: blueviolet;
         position: absolute;
         display: flex;
@@ -474,6 +481,10 @@ i{
 }
 
 @media (max-width: 600px){
+
+    #nav{
+        width: 60%;
+    }
 
     #contProyectos{
         display: flex;

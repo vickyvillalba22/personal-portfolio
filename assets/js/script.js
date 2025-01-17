@@ -295,6 +295,10 @@ function validarNombre(){
         campoNombre.classList.remove("sinBorde");
         campoNombre.classList.add("bordeRojo");
         campoError.innerHTML += "Name must have at least 3 characters <br>";
+    } else {
+        campoNombre.classList.remove("sinBorde");
+        campoNombre.classList.remove("bordeRojo");
+        campoNombre.classList.add("bordeVerde");
     }
 
 }
@@ -303,8 +307,10 @@ function validarNombre(){
 
 let campoTel = document.getElementById("phone");
 
-/*function validarTel (){
+function validarTel (){
 
+    /*forma hecha con regex:
+    
     let regex = /^\d{8,15}$/; //Esto valida que la cadena contenga solo números y que su longitud esté entre 8 y 15.
 
     if (regex.test(campoTel.value)){
@@ -312,9 +318,21 @@ let campoTel = document.getElementById("phone");
         campoError.classList.remove("invisible");
         campoTel.classList.remove("sinBorde");
         campoTel.classList.add("bordeRojo");
+    }*/
+
+    //aca valido si tiene entre 6 y 15 numeros
+    if (campoTel.value.length < 6 || campoTel.value.length > 16){
+        campoError.innerHTML += "Phone must have between 6 and 15 numbers <br>";
+        campoError.classList.remove("invisible");
+        campoTel.classList.remove("sinBorde");
+        campoTel.classList.add("bordeRojo");
+    } else {
+        campoTel.classList.remove("sinBorde");
+        campoTel.classList.remove("bordeRojo");
+        campoTel.classList.add("bordeVerde");
     }
 
-}*/
+}
 
 /*mail*/
 
@@ -338,9 +356,34 @@ function validarMail (){
         campoError.classList.remove("invisible");
         campoMail.classList.remove("sinBorde");
         campoMail.classList.add("bordeRojo");
+    } else {
+        campoMail.classList.remove("sinBorde");
+        campoMail.classList.remove("bordeRojo");
+        campoMail.classList.add("bordeVerde");
     }
 
 }
+
+/*mensaje*/ 
+
+let campoMensaje = document.getElementById("message");
+
+function validarMensaje (){
+
+    if (campoMensaje.value.length < 5){
+        campoError.innerHTML += "Message must have at least 5 characters <br>";
+        campoError.classList.remove("invisible");
+        campoMensaje.classList.remove("sinBorde");
+        campoMensaje.classList.add("bordeRojo");
+    } else {
+        campoMensaje.classList.remove("sinBorde");
+        campoMensaje.classList.remove("bordeRojo");
+        campoMensaje.classList.add("bordeVerde");
+    }
+
+}
+
+let inputs = document.querySelectorAll("input");
 
 
 send.addEventListener('click', (event)=>{
@@ -348,8 +391,24 @@ send.addEventListener('click', (event)=>{
     event.preventDefault();
 
     validarNombre();
-    //validarTel();
+    validarTel();
     validarMail();
+    validarMensaje();
+
+    let cantInputs = 0;
+
+    inputs.forEach((input)=>{
+        if (input.classList.contains("bordeVerde")){
+            cantInputs++;
+            
+        }
+    });
+
+    if (cantInputs==4){
+        console.log(cantInputs);
+        campoError.classList.remove("invisible");
+        campoError.innerHTML = "Form submitted successfully!";
+    }
 
 });
 
