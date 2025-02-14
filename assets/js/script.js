@@ -385,7 +385,6 @@ function validarMensaje (){
 
 let inputs = document.querySelectorAll("input");
 
-
 send.addEventListener('click', (event)=>{
 
     event.preventDefault();
