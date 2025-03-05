@@ -203,7 +203,7 @@ let contHabilidades = document.getElementById("contHabilidades");
 for (let i=0; i<habilidades.length; i++){
 
     let container = document.createElement("div");
-    container.classList.add("df", "centerX", "centerY", "proyecto", "bordeRedondo");
+    container.classList.add("df", "centerX", "centerY", "bordeRedondo");
 
     if (i>5){
         container.classList.add("invisibleM")
@@ -269,12 +269,12 @@ readmore.addEventListener('click', ()=>{
 
 });
 
-/*validacion form*/
+/*validacion form
 
 let campoError = document.getElementById("campoError");
 let send = document.getElementById("send");
 
-/*nombre*/
+nombre
 
 let campoNombre = document.getElementById("name");
 
@@ -305,7 +305,7 @@ function validarNombre(){
 
 /*telefono*/
 
-let campoTel = document.getElementById("phone");
+/*let campoTel = document.getElementById("phone");
 
 function validarTel (){
 
@@ -321,7 +321,7 @@ function validarTel (){
     }*/
 
     //aca valido si tiene entre 6 y 15 numeros
-    if (campoTel.value.length < 6 || campoTel.value.length > 16){
+    /*if (campoTel.value.length < 6 || campoTel.value.length > 16){
         campoError.innerHTML += "Phone must have between 6 and 15 numbers <br>";
         campoError.classList.remove("invisible");
         campoTel.classList.remove("sinBorde");
@@ -332,11 +332,11 @@ function validarTel (){
         campoTel.classList.add("bordeVerde");
     }
 
-}
+}*/
 
 /*mail*/
 
-let campoMail = document.getElementById("email");
+/*let campoMail = document.getElementById("email");
 
 function validarMail (){
 
@@ -362,11 +362,11 @@ function validarMail (){
         campoMail.classList.add("bordeVerde");
     }
 
-}
+}*/
 
 /*mensaje*/ 
 
-let campoMensaje = document.getElementById("message");
+/*let campoMensaje = document.getElementById("message");
 
 function validarMensaje (){
 
@@ -409,7 +409,7 @@ send.addEventListener('click', (event)=>{
         campoError.innerHTML = "Form submitted successfully!";
     }
 
-});
+});*/
 
 
 

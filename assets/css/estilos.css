@@ -45,6 +45,11 @@ header{
     margin-top: 5em;
 }
 
+.proyecto:hover{
+    background-color: rgba(217, 216, 216, 0.386);
+    cursor: pointer;
+}
+
 #contProyectos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,11 +64,30 @@ dialog{
     left: 25%;
 }
 
-.fondo-final{
+#habilidades{
+    position: relative;
+    z-index: 1;
+
     background-image: url("../imgs/foco-violeta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 110%;
+    background-position: center;
+}
+
+#habilidades::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad */
+    pointer-events: none; /* Para que no afecte la interacción */
+}
+
+/* Asegurar que el contenido de #habilidades esté por encima */
+#habilidades > * {
+    position: relative;
+    z-index: 1; /* Pone el contenido sobre la capa oscura */
 }
 
 #contHabilidades{
@@ -425,8 +449,7 @@ i{
         background-image: url("../imgs/foco-violeta.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-size: 160%;
-        background-position: 40%;
+        background-position: center 10%;
     }
 
     /*menu hamburguesa - se puede resumir desp con clases utiles*/
